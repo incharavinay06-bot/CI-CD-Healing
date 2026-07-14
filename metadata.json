@@ -1,0 +1,6 @@
+{
+  "name": "Autonomous CI/CD Healing Agent",
+  "description": "An AI-powered DevOps platform that automatically detects, analyzes, fixes, and validates repository errors in real time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

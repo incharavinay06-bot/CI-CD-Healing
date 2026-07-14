@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  healing-agent-app:
+    build:
+      context: ..
+      dockerfile: deliverables/Dockerfile
+    container_name: autonomous_cicd_healing_agent
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - temp_workspace:/tmp
+    restart: unless-stopped
+
+volumes:
+  temp_workspace:
